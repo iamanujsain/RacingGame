@@ -8,7 +8,7 @@ public class uiManager : MonoBehaviour {
 	public Text scoreText;
 	public Button[] buttons;
 
-	bool gameOver;
+	public bool gameOver;
 	int score;
 
 	// Use this for initialization
