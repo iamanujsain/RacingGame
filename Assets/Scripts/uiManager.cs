@@ -7,6 +7,8 @@ public class uiManager : MonoBehaviour {
 
 	public Text scoreText;
 	public Button[] buttons;
+	public Button pauseButton;
+	public AudioManager am;
 
 	public bool gameOver;
 	int score;
@@ -43,8 +45,14 @@ public class uiManager : MonoBehaviour {
 	public void Pause() {
 		if (Time.timeScale == 1) {
 			Time.timeScale = 0;
+			am.carSound.Stop ();
+			pauseButton.GetComponentInChildren<Text>().text = ">";
 		} else if (Time.timeScale == 0) {
 			Time.timeScale = 1;
+			if (!gameOver) {
+				am.carSound.Play ();
+			}
+			pauseButton.GetComponentInChildren<Text>().text = "| |";
 		}
 	}
 
