@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class carController : MonoBehaviour {
 
@@ -68,11 +69,14 @@ public class carController : MonoBehaviour {
 		if (Input.touchCount > 0) {
 			Touch touch = Input.GetTouch (0);
 			float middle = Screen.width / 2;
-			if (touch.position.x < middle && touch.phase == TouchPhase.Began) {
-				MoveLeft ();
-			}
-			if (touch.position.x > middle && touch.phase == TouchPhase.Began) {
-				MoveRight ();
+			float fp = Screen.height - 100f;
+
+			if (touch.position.y < fp) {
+				if (touch.position.x < middle && touch.phase == TouchPhase.Began) {
+					MoveLeft ();
+				} else if (touch.position.x > middle && touch.phase == TouchPhase.Began)  {
+					MoveRight ();
+				}
 			}
 		} else {
 			SetVelocityZero ();

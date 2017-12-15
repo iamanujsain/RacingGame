@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 443
-    y: 79
+    x: 522
+    y: 120
     width: 950
     height: 538
   m_ShowMode: 4
@@ -37,9 +37,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 219
+    y: 217
     width: 234
-    height: 269
+    height: 271
   m_MinSize: {x: 234, y: 271}
   m_MaxSize: {x: 10004, y: 10021}
   m_ActualView: {fileID: 15}
@@ -67,8 +67,8 @@ MonoBehaviour:
     y: 0
     width: 234
     height: 488
-  m_MinSize: {x: 234, y: 492}
-  m_MaxSize: {x: 10004, y: 14042}
+  m_MinSize: {x: 234, y: 471}
+  m_MaxSize: {x: 10004, y: 14021}
   vertical: 1
   controlID: 86
 --- !u!114 &4
@@ -182,8 +182,8 @@ MonoBehaviour:
     y: 30
     width: 950
     height: 488
-  m_MinSize: {x: 917, y: 492}
-  m_MaxSize: {x: 22012, y: 14042}
+  m_MinSize: {x: 917, y: 471}
+  m_MaxSize: {x: 22012, y: 14021}
   vertical: 0
   controlID: 41
 --- !u!114 &9
@@ -228,9 +228,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 234
-    height: 219
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+    height: 217
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -283,8 +283,8 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 647
-    y: 128
+    x: 726
+    y: 169
     width: 228
     height: 467
   m_MaximizeOnPlay: 0
@@ -359,12 +359,12 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 443
-    y: 128
+    x: 522
+    y: 169
     width: 200
     height: 467
   m_SceneLighting: 1
-  lastFramingTime: 50.87669035921215
+  lastFramingTime: 1719.5828345660534
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
@@ -398,9 +398,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 18.447561
+    m_Target: 10.616452
     speed: 2
-    m_Value: 18.447561
+    m_Value: 10.616452
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -436,12 +436,12 @@ MonoBehaviour:
     x: 2
     y: 17
     width: 230
-    height: 198
+    height: 196
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 26baffffdabaffffa4bbffffaabbffff26c1ffffdac1ffffa2c2ffffa6c2ffff70e8ffff24e9ffffece9fffff0e9ffffe4fbffff00000000ec2b0000382c0000
+    m_ExpandedIDs: 1255ffffbc55ffff8456ffff8856ffff526afffffe6affffc66bffffca6bffffec73ffff9874ffff6075ffff6475ffff127bffffd47bffff9c7cffffa07cffff00acffffacacffff74adffff78adffff86b2ffff32b3fffffab3fffffeb3ffffdec0ffff4ac3ffffd2c3ffff62c4ffffa2cfffff56d0ffff2cd1ffff32d1ffffe4fbffff00000000bc250000e8250000ee2d00001a2e0000a2310000f03400009a370000e6370000e03c0000ba40000098440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -487,9 +487,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 2
-    y: 236
+    y: 234
     width: 230
-    height: 248
+    height: 250
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -501,19 +501,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scences
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scences
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Desktop\Desktop\RacingGame
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1c250000
-    m_LastClickedID: 9500
-    m_ExpandedIDs: 00000000c2240000f424000000ca9a3bffffff7f
+    m_SelectedIDs: 66250000
+    m_LastClickedID: 9574
+    m_ExpandedIDs: 00000000c0240000f224000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -541,7 +541,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c2240000f4240000
+    m_ExpandedIDs: 00000000c0240000f2240000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -569,7 +569,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 5eb9ffff00000000
+    m_ExpandedInstanceIDs: 5eb9ffff0000000080250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

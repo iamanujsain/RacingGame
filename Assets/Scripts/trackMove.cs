@@ -16,6 +16,7 @@ public class trackMove : MonoBehaviour {
 	void Update () {
 
 		if (!ui.gameOver) {
+
 			offset = new Vector2 (0, Time.time * speed);
 
 			GetComponent<Renderer> ().material.mainTextureOffset = offset;

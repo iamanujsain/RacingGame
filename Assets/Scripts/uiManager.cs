@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class uiManager : MonoBehaviour {
 
@@ -10,19 +11,22 @@ public class uiManager : MonoBehaviour {
 	public Button pauseButton;
 	public AudioManager am;
 
-	public bool gameOver;
-	int score;
+	public bool gameOver, flagPause;
+	public int score;
 
 	// Use this for initialization
 	void Start () {
 		gameOver = false;
+		flagPause = false;
 		score = 0;
 		InvokeRepeating ("scoreUpdate", 1.0f, 0.5f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		scoreText.text = "Score: " + score;
+		if (Application.loadedLevel == 1) {
+			scoreText.text = "Score: " + score;
+		}
 	}
 
 	void scoreUpdate() {
@@ -46,12 +50,14 @@ public class uiManager : MonoBehaviour {
 		if (Time.timeScale == 1) {
 			Time.timeScale = 0;
 			am.carSound.Stop ();
+			flagPause = true;
 			pauseButton.GetComponentInChildren<Text>().text = ">";
 		} else if (Time.timeScale == 0) {
 			Time.timeScale = 1;
 			if (!gameOver) {
 				am.carSound.Play ();
 			}
+			flagPause = false;
 			pauseButton.GetComponentInChildren<Text>().text = "| |";
 		}
 	}
