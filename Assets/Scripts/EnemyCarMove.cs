@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyCarMove : MonoBehaviour {
 
-	public float speed = 5f;
+	public static float speed = 3f;
 
 	Vector3 position;
 
@@ -20,5 +20,5 @@ public class EnemyCarMove : MonoBehaviour {
 		position = transform.position;
 		position.x = Mathf.Clamp (position.x, -2.16f, 2.16f);
 		transform.position = position;
-	}
+    }
 }

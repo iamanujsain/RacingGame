@@ -4,7 +4,7 @@ using UnityEngine;
 public class trackMove : MonoBehaviour {
 
 	public uiManager ui;
-	public float speed;
+	public static float speed = .2f;
 	Vector2 offset;
 
 	// Use this for initialization

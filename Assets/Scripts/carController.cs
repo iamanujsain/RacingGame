@@ -4,10 +4,11 @@ using UnityEngine.UI;
 
 public class carController : MonoBehaviour {
 
-	public float carSpeed;
 	public uiManager ui;
 	public AudioManager am;
+    public carSpawner cp;
 
+    float carSpeed = 2.5f;
 	bool currentPlatformAndroid = false;
 	Rigidbody2D rb;
 
@@ -39,6 +40,28 @@ public class carController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        if (uiManager.score > 20 && uiManager.score < 50)
+        {
+            trackMove.speed = .4f;
+            EnemyCarMove.speed = 3f;
+            cp.delayTimer = 1.3f;
+            carSpeed = 2.7f;
+        }
+        else if (uiManager.score > 50 && uiManager.score < 100)
+        {
+            trackMove.speed = .7f;
+            EnemyCarMove.speed = 5f;
+            cp.delayTimer = 1f;
+            carSpeed = 3f;
+        }
+        else if (uiManager.score > 100)
+        {
+            trackMove.speed = 1f;
+            EnemyCarMove.speed = 7f;
+            cp.delayTimer = .75f;
+            carSpeed = 3f;
+        }
+
 		if (currentPlatformAndroid) {
 			TouchMove ();
 			//AcclerometerMove ();
@@ -62,6 +85,10 @@ public class carController : MonoBehaviour {
 			gameObject.SetActive(false);
 			ui.gameOverActivated ();
 			am.carSound.Stop ();
+
+            carSpeed = 2.5f;
+            trackMove.speed = .2f;
+            EnemyCarMove.speed = 3f;
 		}
 	}
 

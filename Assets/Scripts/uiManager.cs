@@ -10,9 +10,8 @@ public class uiManager : MonoBehaviour {
 	public Button[] buttons;
 	public Button pauseButton;
 	public AudioManager am;
-
 	public bool gameOver, flagPause;
-	public int score;
+	public static int score;
 
 	// Use this for initialization
 	void Start () {
@@ -40,13 +39,29 @@ public class uiManager : MonoBehaviour {
 		foreach (Button button in buttons) {
 			button.gameObject.SetActive(true);
 		}
+        //Reset();
 	}
 
 	public void play() {
-		Application.LoadLevel ("Level1");
+        //Reset();
+        Application.LoadLevel ("Level1");
 	}
 
-	public void Pause() {
+    public void StartPlaying()
+    {
+        //Reset();
+        Application.LoadLevel("Level1");
+    }
+
+    // Resets the speed.
+    //public void Reset()
+    //{
+    //    trackMove.speed = .2f;
+    //    EnemyCarMove.speed = 3f;
+    //    //carSpawner.delayTimer = .2f;
+    //}
+
+    public void Pause() {
 		if (Time.timeScale == 1) {
 			Time.timeScale = 0;
 			am.carSound.Stop ();
@@ -67,7 +82,7 @@ public class uiManager : MonoBehaviour {
 	} */
 
 	public void Menu() {
-		Application.LoadLevel ("Menu");
+		Application.LoadLevel (name: "Menu");
 	}
 
 	public void Exit() {
