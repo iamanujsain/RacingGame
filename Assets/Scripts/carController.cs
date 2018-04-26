@@ -6,9 +6,9 @@ public class carController : MonoBehaviour {
 
 	public uiManager ui;
 	public AudioManager am;
-    public carSpawner cp;
+    	public carSpawner cp;
 
-    float carSpeed = 2.5f;
+    	float carSpeed = 2.5f;
 	bool currentPlatformAndroid = false;
 	Rigidbody2D rb;
 
